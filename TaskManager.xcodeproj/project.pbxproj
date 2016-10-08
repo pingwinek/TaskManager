@@ -16,6 +16,10 @@
 		042354331DA9097D001EDDAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042354311DA9097D001EDDAB /* LaunchScreen.storyboard */; };
 		0423543E1DA9097D001EDDAB /* TaskManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423543D1DA9097D001EDDAB /* TaskManagerTests.m */; };
 		042354491DA9097E001EDDAB /* TaskManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042354481DA9097E001EDDAB /* TaskManagerUITests.m */; };
+		0423545F1DA94ADD001EDDAB /* Task+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 042354581DA94ADD001EDDAB /* Task+CoreDataProperties.m */; };
+		042354601DA94ADD001EDDAB /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423545A1DA94ADD001EDDAB /* Task.m */; };
+		042354611DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423545C1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m */; };
+		042354621DA94ADD001EDDAB /* TaskDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423545E1DA94ADD001EDDAB /* TaskDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		042354441DA9097D001EDDAB /* TaskManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042354481DA9097E001EDDAB /* TaskManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskManagerUITests.m; sourceTree = "<group>"; };
 		0423544A1DA9097E001EDDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042354571DA94ADD001EDDAB /* Task+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataProperties.h"; sourceTree = "<group>"; };
+		042354581DA94ADD001EDDAB /* Task+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataProperties.m"; sourceTree = "<group>"; };
+		042354591DA94ADD001EDDAB /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		0423545A1DA94ADD001EDDAB /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		0423545B1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskDetails+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0423545C1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskDetails+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0423545D1DA94ADD001EDDAB /* TaskDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetails.h; sourceTree = "<group>"; };
+		0423545E1DA94ADD001EDDAB /* TaskDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,7 @@
 		0423541F1DA9097D001EDDAB /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				042354561DA94A70001EDDAB /* CoreData */,
 				042354231DA9097D001EDDAB /* AppDelegate.h */,
 				042354241DA9097D001EDDAB /* AppDelegate.m */,
 				042354261DA9097D001EDDAB /* ViewController.h */,
@@ -111,7 +124,6 @@
 				0423542F1DA9097D001EDDAB /* Assets.xcassets */,
 				042354311DA9097D001EDDAB /* LaunchScreen.storyboard */,
 				042354341DA9097D001EDDAB /* Info.plist */,
-				0423542C1DA9097D001EDDAB /* TaskManager.xcdatamodeld */,
 				042354201DA9097D001EDDAB /* Supporting Files */,
 			);
 			path = TaskManager;
@@ -141,6 +153,22 @@
 				0423544A1DA9097E001EDDAB /* Info.plist */,
 			);
 			path = TaskManagerUITests;
+			sourceTree = "<group>";
+		};
+		042354561DA94A70001EDDAB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0423542C1DA9097D001EDDAB /* TaskManager.xcdatamodeld */,
+				042354571DA94ADD001EDDAB /* Task+CoreDataProperties.h */,
+				042354581DA94ADD001EDDAB /* Task+CoreDataProperties.m */,
+				042354591DA94ADD001EDDAB /* Task.h */,
+				0423545A1DA94ADD001EDDAB /* Task.m */,
+				0423545B1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.h */,
+				0423545C1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m */,
+				0423545D1DA94ADD001EDDAB /* TaskDetails.h */,
+				0423545E1DA94ADD001EDDAB /* TaskDetails.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				042354281DA9097D001EDDAB /* ViewController.m in Sources */,
+				042354621DA94ADD001EDDAB /* TaskDetails.m in Sources */,
+				0423545F1DA94ADD001EDDAB /* Task+CoreDataProperties.m in Sources */,
 				042354251DA9097D001EDDAB /* AppDelegate.m in Sources */,
+				042354611DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m in Sources */,
 				0423542E1DA9097D001EDDAB /* TaskManager.xcdatamodeld in Sources */,
+				042354601DA94ADD001EDDAB /* Task.m in Sources */,
 				042354221DA9097D001EDDAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
