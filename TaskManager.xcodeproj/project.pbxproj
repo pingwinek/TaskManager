@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		042354221DA9097D001EDDAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042354211DA9097D001EDDAB /* main.m */; };
 		042354251DA9097D001EDDAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042354241DA9097D001EDDAB /* AppDelegate.m */; };
-		042354281DA9097D001EDDAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042354271DA9097D001EDDAB /* ViewController.m */; };
+		042354281DA9097D001EDDAB /* TaskListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042354271DA9097D001EDDAB /* TaskListVC.m */; };
 		0423542B1DA9097D001EDDAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042354291DA9097D001EDDAB /* Main.storyboard */; };
 		0423542E1DA9097D001EDDAB /* TaskManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0423542C1DA9097D001EDDAB /* TaskManager.xcdatamodeld */; };
 		042354301DA9097D001EDDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0423542F1DA9097D001EDDAB /* Assets.xcassets */; };
@@ -20,6 +20,9 @@
 		042354601DA94ADD001EDDAB /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423545A1DA94ADD001EDDAB /* Task.m */; };
 		042354611DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423545C1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m */; };
 		042354621DA94ADD001EDDAB /* TaskDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423545E1DA94ADD001EDDAB /* TaskDetails.m */; };
+		042355041DA9A022001EDDAB /* Category+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 042355011DA9A022001EDDAB /* Category+CoreDataProperties.m */; };
+		042355051DA9A022001EDDAB /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 042355031DA9A022001EDDAB /* Category.m */; };
+		042355091DAA738A001EDDAB /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042355081DAA738A001EDDAB /* TaskCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +47,8 @@
 		042354211DA9097D001EDDAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		042354231DA9097D001EDDAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		042354241DA9097D001EDDAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		042354261DA9097D001EDDAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		042354271DA9097D001EDDAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		042354261DA9097D001EDDAB /* TaskListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskListVC.h; sourceTree = "<group>"; };
+		042354271DA9097D001EDDAB /* TaskListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskListVC.m; sourceTree = "<group>"; };
 		0423542A1DA9097D001EDDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0423542D1DA9097D001EDDAB /* TaskManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManager.xcdatamodel; sourceTree = "<group>"; };
 		0423542F1DA9097D001EDDAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +68,12 @@
 		0423545C1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskDetails+CoreDataProperties.m"; sourceTree = "<group>"; };
 		0423545D1DA94ADD001EDDAB /* TaskDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetails.h; sourceTree = "<group>"; };
 		0423545E1DA94ADD001EDDAB /* TaskDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetails.m; sourceTree = "<group>"; };
+		042355001DA9A022001EDDAB /* Category+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Category+CoreDataProperties.h"; sourceTree = "<group>"; };
+		042355011DA9A022001EDDAB /* Category+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Category+CoreDataProperties.m"; sourceTree = "<group>"; };
+		042355021DA9A022001EDDAB /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		042355031DA9A022001EDDAB /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		042355071DAA738A001EDDAB /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		042355081DAA738A001EDDAB /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +124,12 @@
 		0423541F1DA9097D001EDDAB /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				042355061DAA736F001EDDAB /* Cells */,
 				042354561DA94A70001EDDAB /* CoreData */,
 				042354231DA9097D001EDDAB /* AppDelegate.h */,
 				042354241DA9097D001EDDAB /* AppDelegate.m */,
-				042354261DA9097D001EDDAB /* ViewController.h */,
-				042354271DA9097D001EDDAB /* ViewController.m */,
+				042354261DA9097D001EDDAB /* TaskListVC.h */,
+				042354271DA9097D001EDDAB /* TaskListVC.m */,
 				042354291DA9097D001EDDAB /* Main.storyboard */,
 				0423542F1DA9097D001EDDAB /* Assets.xcassets */,
 				042354311DA9097D001EDDAB /* LaunchScreen.storyboard */,
@@ -167,8 +177,21 @@
 				0423545C1DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m */,
 				0423545D1DA94ADD001EDDAB /* TaskDetails.h */,
 				0423545E1DA94ADD001EDDAB /* TaskDetails.m */,
+				042355001DA9A022001EDDAB /* Category+CoreDataProperties.h */,
+				042355011DA9A022001EDDAB /* Category+CoreDataProperties.m */,
+				042355021DA9A022001EDDAB /* Category.h */,
+				042355031DA9A022001EDDAB /* Category.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		042355061DAA736F001EDDAB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				042355071DAA738A001EDDAB /* TaskCell.h */,
+				042355081DAA738A001EDDAB /* TaskCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,14 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042354281DA9097D001EDDAB /* ViewController.m in Sources */,
+				042354281DA9097D001EDDAB /* TaskListVC.m in Sources */,
 				042354621DA94ADD001EDDAB /* TaskDetails.m in Sources */,
 				0423545F1DA94ADD001EDDAB /* Task+CoreDataProperties.m in Sources */,
+				042355091DAA738A001EDDAB /* TaskCell.m in Sources */,
 				042354251DA9097D001EDDAB /* AppDelegate.m in Sources */,
 				042354611DA94ADD001EDDAB /* TaskDetails+CoreDataProperties.m in Sources */,
 				0423542E1DA9097D001EDDAB /* TaskManager.xcdatamodeld in Sources */,
 				042354601DA94ADD001EDDAB /* Task.m in Sources */,
+				042355051DA9A022001EDDAB /* Category.m in Sources */,
 				042354221DA9097D001EDDAB /* main.m in Sources */,
+				042355041DA9A022001EDDAB /* Category+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +560,7 @@
 				0423544F1DA9097E001EDDAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042354501DA9097E001EDDAB /* Build configuration list for PBXNativeTarget "TaskManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +569,7 @@
 				042354521DA9097E001EDDAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042354531DA9097E001EDDAB /* Build configuration list for PBXNativeTarget "TaskManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +578,7 @@
 				042354551DA9097E001EDDAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

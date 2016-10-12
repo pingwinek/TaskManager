@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TaskListVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property(nonatomic,strong) NSArray *sourceArray;
 
 @end
 
